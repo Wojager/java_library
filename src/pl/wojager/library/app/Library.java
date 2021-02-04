@@ -1,6 +1,10 @@
+package pl.wojager.library.app;
+
+import pl.wojager.library.model.Book;
+
 public class Library {
     public static void main(String[] args) {
-        final String appName = "Biblioteka v0.4";
+        final String appName = "Biblioteka v0.5";
 
         Book book1 = new Book("w pustyni i w puszczy", "Henryk Sienkiewicz", 1996, 297, "Greg", "1234567890123" );
         Book book2 = new Book("Diuna II", "John Doe", 1988, 199, "pwn", "9879879879" );
@@ -8,6 +12,7 @@ public class Library {
 
 
         System.out.println(appName);
+        System.out.println(book1.getAuthor());
         System.out.println("Książki dostępne w bibliotece");
 
         book1.printInfo();
